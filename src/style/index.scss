@@ -1,0 +1,87 @@
+@import "./login-form";
+@import "./chat-box";
+@import "./widget";
+
+html,
+body {
+  font: 14px/1.21 "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(236, 154, 82, 1) 0%,
+    rgba(233, 66, 121, 1) 100%
+  );
+  overflow: hidden;
+}
+
+#mainSlider {
+  width: 200vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: stretch;
+  transition: transform 0.5s ease-in-out;
+
+  .page {
+    flex: 1;
+  }
+}
+
+.slide {
+  transform: translate(-50%, 0px);
+}
+
+#snackbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+  transform: translate(0px, -100%);
+  #snackbar {
+    background: #151515;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+}
+.snackSlide {
+  transform: translate(0px, 50%) !important;
+}
+
+.star {
+  color: #ff9933;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.txtField {
+  border-radius: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  padding: 10px;
+  background: #e3dff5;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}

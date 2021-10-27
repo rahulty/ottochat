@@ -1,0 +1,66 @@
+#loginContainer{
+  width: 50%;
+  max-width: 400px;
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1em;
+  overflow: hidden;
+
+  .formContainer{
+    padding: 0 30px 30px 30px;
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+  }
+
+}
+#loginNavbar{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(236,154,82,1) 0%, rgba(233,66,121,1) 100%);
+
+}
+#loginSlider{
+  width: 200%;
+  display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.loginFormContainer {
+  flex: 1;
+}
+
+.signupFormContainer {
+  flex: 1;
+}
+
+.navBtns{
+	width:40%;
+	background: white;
+	display: flex;
+	flex: 1;
+	margin: 0 30%;
+	justify-content: space-between;
+	border-radius: 10px;
+	min-width: 110px;
+  cursor: pointer;
+  overflow: hidden;
+	
+	.navBtn{
+    transition: background 0.5s ease-in-out;
+		padding: 10px;
+		flex: 1;
+    text-align: center;
+    user-select: none;
+  }
+  .active{
+    background: #e3dff5;
+  }
+}

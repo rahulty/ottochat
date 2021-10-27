@@ -1,0 +1,60 @@
+#map {
+	flex: 1;
+  min-height: 40vh;
+  min-width: 20rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right:0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+	flex-direction: column;
+	background: rgba(0,0,0,0.9);
+	color: white;
+}
+
+.widgetContainer {
+	position: relative;
+	margin: 10vh auto;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.widgetContainer > div:nth-child(2) {
+  flex: 1;
+  background: white;
+  border-radius: 0px 0px 20px 20px;
+  padding: 20px;
+}
+
+.widgetContainer > h1:nth-child(1) {
+  border: 1px solid white;
+  margin: 0;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+}
+
+.star {
+  font-size: 3rem;
+}
+#completeCTA{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+#dateWidget{
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+}
+#rateConversationWidget{
+	display: flex;
+  flex-direction: column;
+  .btn{
+    align-self: flex-end;
+  }
+}

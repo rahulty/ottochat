@@ -1,0 +1,73 @@
+#navBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+}
+
+#chatBox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #msg {
+    display: flex;
+    padding: 0 30px;
+    border-radius: 50px;
+    flex: 1;
+    border: none;
+    outline-style: none;
+  }
+  form {
+    display: flex;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    align-self: center;
+    width: 50%;
+    min-width: 480px;
+  }
+
+  #chat {
+    flex: 1;
+    overflow-y: auto;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+
+    #msgs {
+      width: 50%;
+      margin: 0 auto;
+      min-width: 480px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .msg {
+      margin: 0 10px 2px 10px;
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 40%;
+    }
+
+    .myMsg {
+      background: #056162;
+      align-self: flex-end;
+    }
+
+    .otherMsg {
+      background: #262d31;
+      align-self: flex-start;
+      border-radius: 10px;
+    }
+  }
+}
+
+#sendMsgFormContainer {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
