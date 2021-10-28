@@ -37,14 +37,10 @@ export const logout = (store) => {
 
 export const connectAndListen = (store) => {
   const socket = io("https://demo-chat-server.on.ag");
-  socket.on("message", (msg) => {
-    console.log(msg);
-  });
   socket.on("connect", () => {
     console.log("id:", socket.id);
   });
   socket.on("command", (response) => {
-    console.log("command", response);
     store.setState({ command: response.command, showWidget: true });
   });
   store.setState({ socket });

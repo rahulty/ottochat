@@ -3,7 +3,6 @@ import useGlobal from "../store";
 
 export default function Snackbar() {
   const [globalState] = useGlobal();
-  console.log("snackme", globalState.snackMessage);
   return (
     <div
       id="snackbarContainer"

@@ -9,11 +9,10 @@ export default function LoginForm() {
   function onSubmit(e) {
     const {
       username: { value: username },
-      password: { value: password }
+      password: { value: password },
     } = e.target;
     globalActions.login(username, password);
   }
-  console.log(globalState.username);
 
   return (
     <Fragment>

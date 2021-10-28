@@ -25,23 +25,17 @@
     border-radius: 50%;
     height: 50px;
     align-self: center;
-    width: 50%;
-    min-width: 480px;
   }
 
   #chat {
     flex: 1;
     overflow-y: auto;
     color: white;
-    width: 100vw;
     display: flex;
     flex-direction: column-reverse;
     padding: 10px;
 
     #msgs {
-      width: 50%;
-      margin: 0 auto;
-      min-width: 480px;
       display: flex;
       flex-direction: column-reverse;
     }
