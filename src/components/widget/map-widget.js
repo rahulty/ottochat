@@ -22,8 +22,7 @@ const loadGMaps = (callback) => {
   const existingScript = document.getElementById("googleMaps");
   if (!existingScript) {
     const script = document.createElement("script");
-    script.src =
-      "https://maps.googleapis.com/maps/api/js?key=AIzaSyDcwGyRxRbcNGWOFQVT87A1mkxEOfm8t0w";
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.G_KEY}`;
     script.id = "googleMaps";
     document.body.appendChild(script);
     script.onload = () => {
